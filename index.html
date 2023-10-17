@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Поиск элемента в массиве</title>
+</head>
+<body>
+<h1>Поиск элемента в массиве</h1>
+<p id="result"></p>
+<script>
+const arr = [1, 2, 5, 9, 4, 13, 4, 10];
+let found = false;
+for (let i = 0; i < arr.length; i++) {
+if (arr[i] === 4) {
+found = true;
+document.getElementById("result").innerHTML = 'Есть!';
+break;
+}
+}
+if (!found) {
+document.getElementById("result").innerHTML = 'Нет такого элемента.';
+}
+</script>
+</body>
+</html>
